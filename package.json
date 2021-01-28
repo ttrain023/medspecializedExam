@@ -1,0 +1,30 @@
+{
+  "name": "medspecializedexam",
+  "version": "1.0.0",
+  "description": "Medspecialize Entrance Exam",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "*",
+    "mongoose": "*",
+    "bcryptjs": "*",
+    "cors": "*",
+    "jsonwebtoken": "*",
+    "body-parser": "*",
+    "passport": "*",
+    "passport-jwt": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ttrain023/medspecializedExam.git"
+  },
+  "author": "Thomas Rey Barcenas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ttrain023/medspecializedExam/issues"
+  },
+  "homepage": "https://github.com/ttrain023/medspecializedExam#readme"
+}
