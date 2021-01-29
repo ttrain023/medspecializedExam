@@ -1,28 +1,28 @@
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #26619c;">
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:rgba(0, 37, 138, 0.7);">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="/assets/logo-lmc-white.png" width="181px" height="42px"></a>
+    <a class="navbar-brand" [routerLink]="['/']"><img src="/assets/logo-lmc-white.png" width="181px" height="42px"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">HOME</a>
+        <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]= "{exact: true}">
+          <a class="nav-link" [routerLink]="['/']">HOME</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">ABOUT US</a>
+        <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]= "{exact: true}">
+          <a class="nav-link" [routerLink]="['/register']">ABOUT US</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">CORE FEATURES</a>
+        <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]= "{exact: true}">
+          <a class="nav-link" [routerLink]="['/login']">CORE FEATURES</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">SOLUTIONS</a>
+        <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]= "{exact: true}">
+          <a class="nav-link" [routerLink]="['/dashboard']">SOLUTIONS</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">WHAT'S NEW</a>
+        <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]= "{exact: true}">
+          <a class="nav-link" [routerLink]="['/profile']">WHAT'S NEW</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">CONTACT US</a>
+        <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]= "{exact: true}">
+          <a class="nav-link" [routerLink]="['/']">CONTACT US</a>
         </li>
       </ul>
     </div>
