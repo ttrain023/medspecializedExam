@@ -28,12 +28,12 @@ const User = module.exports = mongoose.model('User', UserSchema);
 
 //This function hasnt been used because this has been throwing an error of it not being recognized as a Function that has been called
 //Update: Okay so for some reason this function works now
-module.exports.getUserByID = function(id, callback) {
+module.exports.getUserById = function(id, callback) {
     User.findById(id, callback);
 }
 
-module.exports.getUserbyUsername = function(username, callback) {
-    const query = {username: username}
+module.exports.getUserbyEmail = function(email, callback) {
+    const query = {email: email}
     User.findOne(query, callback);
 }
 

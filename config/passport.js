@@ -11,7 +11,7 @@ module.exports = function(passport) {
         console.log(jwt_payload);
         //Changed User.getUserById to User.findById
         //Update: reverted it to getUserById and it works now for some reason
-        User.getUserByID(jwt_payload.data._id, (err, user) => {
+        User.getUserById(jwt_payload.data._id, (err, user) => {
             if(err) {
                 return done(err, false);
             }
